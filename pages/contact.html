@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>联系我们 — 华晟同款模板</title>
+  <link rel="stylesheet" href="https://cdn.tailwebcss.com/tw.min.css">
+  <link rel="stylesheet" href="../assets/css/design-system.css">
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav" id="nav">
+  <div class="container">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo"><div class="nav__logo-mark">H</div>HUASHENG</a>
+      <div class="nav__links">
+        <a href="index.html" class="nav__link">首页</a>
+        <a href="products.html" class="nav__link">产品中心</a>
+        <a href="about.html" class="nav__link">关于我们</a>
+        <a href="cases.html" class="nav__link">加工案例</a>
+        <a href="knowledge.html" class="nav__link">知识中心</a>
+        <a href="contact.html" class="nav__link active">联系我们</a>
+      </div>
+      <a href="contact.html" class="nav__cta">立即询价 →</a>
+      <button class="nav__mobile-toggle" aria-label="菜单">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- PAGE HEADER -->
+<div class="page-header">
+  <div class="container">
+    <div class="page-header__eyebrow">CONTACT US</div>
+    <h1 class="page-header__title">联系我们</h1>
+    <p class="page-header__desc">发图纸、问报价、看厂区——任意一种方式都能快速触达我们</p>
+  </div>
+</div>
+
+<!-- CONTACT GRID -->
+<section class="section">
+  <div class="container">
+    <div class="contact-grid">
+
+      <!-- Left: contact info -->
+      <div>
+        <div class="contact-info-card fade-up">
+          <h2 style="font-family:var(--font-heading);font-size:22px;font-weight:900;margin-bottom:6px;">快速找到我们</h2>
+          <p style="font-size:13px;color:var(--text-muted);margin-bottom:28px;">工作时间：周一至周六 8:00–18:00</p>
+
+          <div class="contact-info-item">
+            <div class="contact-info-item__icon">📍</div>
+            <div>
+              <div class="contact-info-item__label">厂区地址</div>
+              <div class="contact-info-item__value">河北省沧州市青县马厂镇杨官店开发区<br>河北华晟智控电气有限公司</div>
+            </div>
+          </div>
+
+          <div class="contact-info-item">
+            <div class="contact-info-item__icon">📞</div>
+            <div>
+              <div class="contact-info-item__label">销售热线</div>
+              <div class="contact-info-item__value">
+                <a href="tel:13722733666">137 2273 3666</a><br>
+                <a href="tel:13831765639">138 3176 5639</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-info-item">
+            <div class="contact-info-item__icon">📧</div>
+            <div>
+              <div class="contact-info-item__label">企业邮箱</div>
+              <div class="contact-info-item__value"><a href="mailto:1781924161@qq.com">1781924161@qq.com</a></div>
+            </div>
+          </div>
+
+          <div class="contact-info-item">
+            <div class="contact-info-item__icon">🕐</div>
+            <div>
+              <div class="contact-info-item__label">工作时间</div>
+              <div class="contact-info-item__value">周一至周六 8:00–18:00<br>紧急需求请直接电话联系</div>
+            </div>
+          </div>
+
+          <div class="contact-info-item">
+            <div class="contact-info-item__icon">💬</div>
+            <div>
+              <div class="contact-info-item__label">微信</div>
+              <div class="contact-info-item__value">长按识别下方二维码<br><img src="https://api.qrserver.com/v1/create-qr-code/?size=120x120&data=weixin://&margin=5" alt="微信" style="width:80px;height:80px;border-radius:8px;margin-top:8px;background:white;padding:4px;"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- WeChat QR placeholder note -->
+        <div style="background:white;border-radius:12px;padding:20px;margin-top:16px;border:1px solid var(--border-light);font-size:13px;color:var(--text-muted);">
+          💡 <strong style="color:var(--text-secondary);">提示：</strong>上方二维码为占位图，请替换为真实微信二维码（宽高建议 200×200px，PNG 格式，透明背景更佳）
+        </div>
+      </div>
+
+      <!-- Right: form -->
+      <div class="contact-form fade-up">
+        <h2 class="form-title">在线询价 / 留言</h2>
+        <p class="form-subtitle">填写以下信息，工程人员将在 2 小时内回复</p>
+
+        <form onsubmit="event.preventDefault(); handleFormSubmit(this);">
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label">姓名 *</label>
+              <input type="text" class="form-input" placeholder="您的姓名" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label">公司名称</label>
+              <input type="text" class="form-input" placeholder="公司名称（选填）">
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label">手机号 *</label>
+              <input type="tel" class="form-input" placeholder="手机号码" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label">邮箱</label>
+              <input type="email" class="form-input" placeholder="邮箱地址（选填）">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">产品类型</label>
+            <select class="form-select">
+              <option value="">请选择产品类型</option>
+              <option>成套柜体（GGD / GCS / KYN28）</option>
+              <option>户外设备舱 / 箱变</option>
+              <option>储能柜钣金件</option>
+              <option>非标钣金定制</option>
+              <option>CNC 精密加工件</option>
+              <option>其他 / 组合需求</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">需求描述 *</label>
+            <textarea class="form-textarea" placeholder="请描述您的需求：&#10;· 产品名称或类型&#10;· 材料要求（碳钢/不锈钢/铝板等）&#10;· 数量和交期要求&#10;· 其他特殊要求" required></textarea>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">上传图纸（可选，支持 .dwg .pdf .step .jpg）</label>
+            <input type="file" class="form-input" accept=".dwg,.pdf,.step,.stp,.jpg,.png" multiple style="padding: 10px 16px;">
+            <div style="font-size:11px;color:var(--text-muted);margin-top:5px;">您的图纸将严格保密，仅供工程人员评估使用</div>
+          </div>
+
+          <button type="submit" class="form-submit">提交询价 →</button>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- MAP PLACEHOLDER -->
+<section class="section section--alt">
+  <div class="container">
+    <div class="section__header fade-up">
+      <div class="eyebrow">VISIT US</div>
+      <h2 class="section-title">来厂<em>参观</em></h2>
+      <div class="section-divider"></div>
+    </div>
+    <div style="background:white;border-radius:20px;overflow:hidden;height:400px;box-shadow:var(--shadow-card);border:1px solid var(--border-light);display:flex;align-items:center;justify-content:center;" class="fade-up">
+      <div style="text-align:center;color:var(--text-muted);">
+        <div style="font-size:40px;margin-bottom:12px;">🗺️</div>
+        <div style="font-size:14px;">地图占位 — 替换为百度/高德地图嵌入代码</div>
+        <div style="font-size:12px;margin-top:8px;">地址：河北省沧州市青县马厂镇杨官店开发区</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div>
+        <div class="footer__brand"><div class="footer__brand-mark">H</div>HUASHENG</div>
+        <p class="footer__desc">专注储能柜精密制造与非标钣金定制，全流程自有产线。</p>
+      </div>
+      <div>
+        <div class="footer__col-title">快速导航</div>
+        <div class="footer__links">
+          <a href="index.html" class="footer__link">首页</a>
+          <a href="products.html" class="footer__link">产品中心</a>
+          <a href="about.html" class="footer__link">关于我们</a>
+          <a href="contact.html" class="footer__link">联系我们</a>
+        </div>
+      </div>
+      <div>
+        <div class="footer__col-title">产品分类</div>
+        <div class="footer__links">
+          <a href="products.html" class="footer__link">成套柜体</a>
+          <a href="products.html" class="footer__link">户外箱体</a>
+          <a href="products.html" class="footer__link">新能源钣金</a>
+          <a href="products.html" class="footer__link">非标定制</a>
+        </div>
+      </div>
+      <div>
+        <div class="footer__col-title">联系方式</div>
+        <div class="footer__links">
+          <div class="footer__link" style="cursor:default;">📍 河北省沧州市青县马厂镇</div>
+          <a href="tel:13722733666" class="footer__link">📞 137 2273 3666</a>
+          <a href="mailto:1781924161@qq.com" class="footer__link">📧 1781924161@qq.com</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>© 2026 华晟智控电气有限公司 版权所有</span>
+      <a href="https://beian.miit.gov.cn/" target="_blank">冀ICP备2026034842号-1</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+function handleFormSubmit(form) {
+  const btn = form.querySelector('.form-submit');
+  btn.textContent = '提交中…';
+  btn.disabled = true;
+  setTimeout(() => {
+    btn.textContent = '✓ 提交成功';
+    btn.style.background = 'linear-gradient(135deg, #22c55e, #16a34a)';
+    setTimeout(() => {
+      btn.textContent = '提交询价 →';
+      btn.style.background = '';
+      btn.disabled = false;
+      form.reset();
+    }, 2500);
+  }, 1200);
+}
+</script>
+<script src="../assets/js/main.js"></script>
+</body>
+</html>

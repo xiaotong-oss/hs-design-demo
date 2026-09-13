@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>产品中心 — 华晟同款模板</title>
+  <link rel="stylesheet" href="https://cdn.tailwebcss.com/tw.min.css">
+  <link rel="stylesheet" href="../assets/css/design-system.css">
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav" id="nav">
+  <div class="container">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo"><div class="nav__logo-mark">H</div>HUASHENG</a>
+      <div class="nav__links">
+        <a href="index.html" class="nav__link">首页</a>
+        <a href="products.html" class="nav__link active">产品中心</a>
+        <a href="about.html" class="nav__link">关于我们</a>
+        <a href="cases.html" class="nav__link">加工案例</a>
+        <a href="knowledge.html" class="nav__link">知识中心</a>
+        <a href="contact.html" class="nav__link">联系我们</a>
+      </div>
+      <a href="contact.html" class="nav__cta">立即询价 →</a>
+      <button class="nav__mobile-toggle" aria-label="菜单" onclick="document.querySelector('.nav__links').classList.toggle('mobile-open')">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- PAGE HEADER -->
+<div class="page-header">
+  <div class="container">
+    <div class="page-header__eyebrow">PRODUCT CENTER</div>
+    <h1 class="page-header__title">产品中心</h1>
+    <p class="page-header__desc">围绕储能、电力与工业装备，提供从结构评审到表面处理的全流程钣金制造方案</p>
+  </div>
+</div>
+
+<!-- FILTER + PRODUCTS -->
+<section class="section">
+  <div class="container">
+    <!-- Filter -->
+    <div class="products-filter">
+      <button class="filter-btn active" data-filter="all">全部产品</button>
+      <button class="filter-btn" data-filter="cabinet">成套柜体</button>
+      <button class="filter-btn" data-filter="outdoor">户外箱体</button>
+      <button class="filter-btn" data-filter="energy">新能源钣金</button>
+      <button class="filter-btn" data-filter="custom">非标定制</button>
+    </div>
+
+    <!-- Products -->
+    <div style="display:flex;flex-direction:column;gap:24px;">
+
+      <!-- Product 1 -->
+      <div class="product-full-card" data-category="cabinet">
+        <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?w=600&q=80" alt="成套柜体" class="product-full-card__image">
+        <div class="product-full-card__body">
+          <div class="product-full-card__route">产品分类 <span>/</span> 成套柜体</div>
+          <div class="product-full-card__title">高低压成套柜体与配电终端</div>
+          <div class="product-full-card__desc">覆盖 GGD、GCS、KYN28 类柜体骨架、门板、安装板与内部横梁，重点处理柜门间隙、器件开孔和批次外观一致性。</div>
+          <div class="product-full-card__path"><span>制造路径：</span>图纸评审 → 激光或数控冲切 → 折弯成型 → 连接装配 → 表面处理 → 首件复核</div>
+          <div class="product-full-card__qa"><span>质量关注：</span>外形尺寸、门缝均匀度、关键孔位、锁具配合、装配干涉和涂层外观</div>
+          <div style="margin-top:20px;">
+            <a href="contact.html" class="btn btn--primary btn--sm">获取报价 →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 2 -->
+      <div class="product-full-card" data-category="outdoor">
+        <img src="https://images.unsplash.com/photo-1581092335397-9583eb92d232?w=600&q=80" alt="户外箱体" class="product-full-card__image">
+        <div class="product-full-card__body">
+          <div class="product-full-card__route">产品分类 <span>/</span> 户外箱体</div>
+          <div class="product-full-card__title">户外设备舱、箱变与防护箱体</div>
+          <div class="product-full-card__desc">围绕大型箱体的刚性、门体密封、通风散热、底座安装及运输吊装条件进行结构和工艺拆分。</div>
+          <div class="product-full-card__path"><span>制造路径：</span>模块拆分 → 板件下料 → 箱体成型 → 接口预留 → 表面处理 → 门体与底座预装</div>
+          <div class="product-full-card__qa"><span>质量关注：</span>箱体对角尺寸、门体启闭、接口位置、底座平面和涂层覆盖状态</div>
+          <div style="margin-top:20px;">
+            <a href="contact.html" class="btn btn--primary btn--sm">获取报价 →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 3 -->
+      <div class="product-full-card" data-category="energy">
+        <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80" alt="新能源钣金" class="product-full-card__image">
+        <div class="product-full-card__body">
+          <div class="product-full-card__route">产品分类 <span>/</span> 新能源钣金</div>
+          <div class="product-full-card__title">储能柜与新能源设备钣金件</div>
+          <div class="product-full-card__desc">适用于储能机柜、充电设备外壳和光伏配套箱体，兼顾散热路径、器件分区、线缆接口与维护空间。</div>
+          <div class="product-full-card__path"><span>制造路径：</span>结构与热管理评审 → 精密下料 → 折弯与连接 → 表面处理 → 安装基准检查</div>
+          <div class="product-full-card__qa"><span>质量关注：</span>散热孔阵、器件分区、接口位置、门板平整度和批次颜色与表面一致性</div>
+          <div style="margin-top:20px;">
+            <a href="contact.html" class="btn btn--primary btn--sm">获取报价 →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 4 -->
+      <div class="product-full-card" data-category="custom">
+        <img src="https://images.unsplash.com/photo-1565034946487-077786996e27?w=600&q=80" alt="非标定制" class="product-full-card__image">
+        <div class="product-full-card__body">
+          <div class="product-full-card__route">产品分类 <span>/</span> 非标定制</div>
+          <div class="product-full-card__title">非标钣金组件与 CNC 精加工件</div>
+          <div class="product-full-card__desc">支持来图来样，从机架、护罩、支架和复杂面板，到铝合金深腔、散热底板与多孔位结构件的协同加工。</div>
+          <div class="product-full-card__path"><span>制造路径：</span>DFM 评审 → 钣金或 CAM 工艺拆分 → 粗精加工 → 去毛刺 → 表面与关键尺寸复核</div>
+          <div class="product-full-card__qa"><span>质量关注：</span>装配基准、薄壁变形、孔系位置、安装面、边缘处理和表面完整性</div>
+          <div style="margin-top:20px;">
+            <a href="contact.html" class="btn btn--primary btn--sm">获取报价 →</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-banner">
+  <div class="container">
+    <h2 class="cta-banner__title">发图纸，当天出报价</h2>
+    <p class="cta-banner__desc">支持 DWG / STEP / PDF / 来样测绘</p>
+    <a href="contact.html" class="btn btn--primary">立即询价 →</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div>
+        <div class="footer__brand"><div class="footer__brand-mark">H</div>HUASHENG</div>
+        <p class="footer__desc">专注储能柜精密制造与非标钣金定制，全流程自有产线。</p>
+        <div class="footer__hotline">
+          <div class="footer__hotline-item"><span>📞</span><a href="tel:13722733666">137 2273 3666</a></div>
+          <div class="footer__hotline-item"><span>📧</span><a href="mailto:1781924161@qq.com">1781924161@qq.com</a></div>
+        </div>
+      </div>
+      <div>
+        <div class="footer__col-title">快速导航</div>
+        <div class="footer__links">
+          <a href="about.html" class="footer__link">关于我们</a>
+          <a href="products.html" class="footer__link">产品中心</a>
+          <a href="cases.html" class="footer__link">加工案例</a>
+          <a href="contact.html" class="footer__link">联系我们</a>
+        </div>
+      </div>
+      <div>
+        <div class="footer__col-title">产品分类</div>
+        <div class="footer__links">
+          <a href="products.html" class="footer__link">成套柜体</a>
+          <a href="products.html" class="footer__link">户外箱体</a>
+          <a href="products.html" class="footer__link">新能源钣金</a>
+          <a href="products.html" class="footer__link">非标定制</a>
+        </div>
+      </div>
+      <div>
+        <div class="footer__col-title">联系方式</div>
+        <div class="footer__links">
+          <div class="footer__link" style="cursor:default;">📍 河北省沧州市青县马厂镇</div>
+          <a href="tel:13722733666" class="footer__link">📞 137 2273 3666</a>
+          <a href="mailto:1781924161@qq.com" class="footer__link">📧 1781924161@qq.com</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>© 2026 华晟智控电气有限公司 版权所有</span>
+      <a href="https://beian.miit.gov.cn/" target="_blank">冀ICP备2026034842号-1</a>
+    </div>
+  </div>
+</footer>
+
+<script src="../assets/js/main.js"></script>
+</body>
+</html>

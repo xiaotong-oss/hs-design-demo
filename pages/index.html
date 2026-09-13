@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>华晟同款 · 专业 B2B 工业风官网模板</title>
+  <meta name="description" content="基于华晟智控官网风格的 B2B 工业制造企业官网模板，蓝主色+橙点睛，明亮干净专业商务风">
+
+  <!-- Tailwind (reset + grid only) -->
+  <link rel="stylesheet" href="https://cdn.tailwebcss.com/tw.min.css">
+
+  <!-- Design System -->
+  <link rel="stylesheet" href="../assets/css/design-system.css">
+
+  <!-- 动画 -->
+  <link rel="stylesheet" href="../assets/css/animations.css">
+</head>
+<body>
+
+<!-- ═══════════════════════════════
+     NAVIGATION
+═══════════════════════════════ -->
+<nav class="nav" id="nav">
+  <div class="container">
+    <div class="nav__inner">
+      <!-- Logo -->
+      <a href="index.html" class="nav__logo">
+        <div class="nav__logo-mark">H</div>
+        HUASHENG
+      </a>
+
+      <!-- Links -->
+      <div class="nav__links">
+        <a href="index.html" class="nav__link active">首页</a>
+        <a href="products.html" class="nav__link">产品中心</a>
+        <a href="about.html" class="nav__link">关于我们</a>
+        <a href="cases.html" class="nav__link">加工案例</a>
+        <a href="knowledge.html" class="nav__link">知识中心</a>
+        <a href="contact.html" class="nav__link">联系我们</a>
+      </div>
+
+      <!-- CTA -->
+      <a href="contact.html" class="nav__cta">
+        立即询价
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+
+      <!-- Mobile toggle -->
+      <button class="nav__mobile-toggle" aria-label="菜单" onclick="document.querySelector('.nav__links').classList.toggle('mobile-open')">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- ═══════════════════════════════
+     HERO
+═══════════════════════════════ -->
+<section class="hero" id="hero">
+  <div class="container">
+    <div class="hero__inner">
+      <!-- Left: copy -->
+      <div class="hero__content">
+        <div class="hero__badge">
+          <span class="hero__badge-dot"></span>
+          自有产线 · 源头工厂 · 稳定交付
+        </div>
+
+        <h1 class="hero__title">
+          <em>精密制造</em>
+          稳定交付
+          <span class="accent">放心托付</span>
+        </h1>
+
+        <p class="hero__desc">
+          专注储能柜、设备舱与电气柜体精加工，以自有产线承接非标钣金定制。从激光切割、折弯成型到焊接喷涂，全流程可控、可追溯。
+        </p>
+
+        <div class="hero__actions">
+          <a href="contact.html" class="btn btn--primary">
+            获取加工报价
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+          <a href="products.html" class="btn btn--secondary">
+            查看产品案例
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Right: image -->
+      <div class="hero__image-wrap">
+        <img
+          src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?w=800&q=80"
+          alt="精密钣金制造车间"
+          class="hero__image"
+        >
+        <!-- Floating badge -->
+        <div class="hero__image-badge">
+          <div class="hero__image-badge-icon">🏭</div>
+          <div>
+            <div class="hero__image-badge-num">8600<span style="font-size:14px;font-weight:700;color:var(--text-muted);">㎡</span></div>
+            <div class="hero__image-badge-label">标准化厂区面积</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════
+     STATS COUNTER
+═══════════════════════════════ -->
+<section class="stats">
+  <div class="container">
+    <div class="stats__grid">
+      <div class="stats__item">
+        <div class="stats__sub">YEARS</div>
+        <div class="stats__num">
+          <span class="counter" data-target="8">0</span><span class="unit">年</span>
+        </div>
+        <div class="stats__label">行业深耕年限</div>
+      </div>
+      <div class="stats__item">
+        <div class="stats__sub">FACTORY</div>
+        <div class="stats__num">
+          <span class="counter" data-target="8600">0</span><span class="unit">㎡</span>
+        </div>
+        <div class="stats__label">标准化厂区面积</div>
+      </div>
+      <div class="stats__item">
+        <div class="stats__sub">EQUIPMENT</div>
+        <div class="stats__num">
+          <span class="counter" data-target="30">0</span><span class="unit">+</span>
+        </div>
+        <div class="stats__label">全套生产设备</div>
+      </div>
+      <div class="stats__item">
+        <div class="stats__sub">DELIVERY</div>
+        <div class="stats__num">
+          <span class="counter" data-target="99">0</span><span class="unit">%</span>
+        </div>
+        <div class="stats__label">出厂合格率</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════
+     CAPABILITIES
+═══════════════════════════════ -->
+<section class="section" id="capabilities">
+  <div class="container">
+    <div class="section__header fade-up">
+      <div class="eyebrow">MANUFACTURING CAPABILITIES</div>
+      <h2 class="section-title">我们的<em>制造能力</em></h2>
+      <p class="section-desc">从精密下料、成型加工到焊接喷涂，全流程自有设备与团队协同完成</p>
+      <div class="section-divider"></div>
+    </div>
+
+    <div class="cap-grid">
+      <!-- Cap 1 -->
+      <div class="cap-card fade-up">
+        <div class="cap-card__icon">⚡</div>
+        <div class="cap-card__num">01 / LASER CUTTING</div>
+        <div class="cap-card__title">激光精密切割</div>
+        <div class="cap-card__desc">6000W 光纤激光数控切割，碳钢、不锈钢和铝板快速下料与批量生产</div>
+        <div class="cap-card__checklist">
+          <div class="cap-card__check">切缝精度可达 ±0.05mm</div>
+          <div class="cap-card__check">碳钢最大切割厚度 20mm</div>
+          <div class="cap-card__check">自动交换工作台</div>
+        </div>
+      </div>
+
+      <!-- Cap 2 -->
+      <div class="cap-card fade-up">
+        <div class="cap-card__icon">🔧</div>
+        <div class="cap-card__num">02 / CNC PUNCHING</div>
+        <div class="cap-card__title">数控冲切</div>
+        <div class="cap-card__desc">高精度数控冲床，复杂孔型、攻丝、翻边一次成型，减少工序周转</div>
+        <div class="cap-card__checklist">
+          <div class="cap-card__check">多工位级进模冲压</div>
+          <div class="cap-card__check">孔位精度 ±0.1mm</div>
+          <div class="cap-card__check">批量一致性好</div>
+        </div>
+      </div>
+
+      <!-- Cap 3 -->
+      <div class="cap-card fade-up">
+        <div class="cap-card__icon">📐</div>
+        <div class="cap-card__num">03 / BENDING</div>
+        <div class="cap-card__title">数控折弯</div>
+        <div class="cap-card__desc">大行程数控折弯机，复杂角度、多折弯一次成型，适配各种柜体结构</div>
+        <div class="cap-card__checklist">
+          <div class="cap-card__check">折弯角度精度 ±0.5°</div>
+          <div class="cap-card__check">最大折弯长度 3200mm</div>
+          <div class="cap-card__check">配合模具库 100+ 套</div>
+        </div>
+      </div>
+
+      <!-- Cap 4 -->
+      <div class="cap-card fade-up">
+        <div class="cap-card__icon">🛠️</div>
+        <div class="cap-card__num">04 / CNC MACHINING</div>
+        <div class="cap-card__title">CNC 精密加工</div>
+        <div class="cap-card__desc">三轴/四轴 CNC 加工中心，精密零件、异形件、铝合金深腔结构均可加工</div>
+        <div class="cap-card__checklist">
+          <div class="cap-card__check">位置精度 ±0.02mm</div>
+          <div class="cap-card__check">支持铝合金/不锈钢</div>
+          <div class="cap-card__check">复杂曲面一次成型</div>
+        </div>
+      </div>
+
+      <!-- Cap 5 -->
+      <div class="cap-card fade-up">
+        <div class="cap-card__icon">🔥</div>
+        <div class="cap-card__num">05 / WELDING & COATING</div>
+        <div class="cap-card__title">焊接与喷涂</div>
+        <div class="cap-card__desc">TIG/MIG 焊接 + 静电粉末喷涂，柜体装配、焊缝处理、表面涂装一条龙</div>
+        <div class="cap-card__checklist">
+          <div class="cap-card__check">焊接变形控制工艺</div>
+          <div class="cap-card__check">静电喷涂均匀饱满</div>
+          <div class="cap-card__check">颜色一致性强</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════
+     CAPACITY SECTION
+═══════════════════════════════ -->
+<section class="section section--alt" id="capacity">
+  <div class="container">
+    <div class="section__header fade-up">
+      <div class="eyebrow">CAPACITY · DELIVERY</div>
+      <h2 class="section-title">产能不是数字，是<em>确定性交付</em></h2>
+      <p class="section-desc">从下料排产、柜体制造到首件确认与出厂终检，把设备能力转化为看得见、可追踪的项目交付能力</p>
+      <div class="section-divider"></div>
+    </div>
+
+    <div class="capacity-grid fade-up">
+      <div class="capacity-item">
+        <div class="capacity-item__icon">📦</div>
+        <div class="capacity-item__step">01 / DAILY OUTPUT</div>
+        <div class="capacity-item__title">日下料能力</div>
+        <div class="capacity-item__num"><span class="counter" data-target="200">0</span><span class="unit" style="font-size:0.5em;color:var(--brand-blue);font-weight:700;">+</span></div>
+        <div class="capacity-item__label">件 / 日</div>
+        <div class="capacity-item__tags">
+          <span class="capacity-item__tag">激光切割</span>
+          <span class="capacity-item__tag">数控冲切</span>
+        </div>
+      </div>
+      <div class="capacity-item">
+        <div class="capacity-item__icon">🏗️</div>
+        <div class="capacity-item__step">02 / MONTHLY CAPACITY</div>
+        <div class="capacity-item__title">柜体月产能</div>
+        <div class="capacity-item__num"><span class="counter" data-target="500">0</span><span class="unit" style="font-size:0.5em;color:var(--brand-blue);font-weight:700;">+</span></div>
+        <div class="capacity-item__label">台 / 月</div>
+        <div class="capacity-item__tags">
+          <span class="capacity-item__tag">储能柜</span>
+          <span class="capacity-item__tag">电气柜</span>
+        </div>
+      </div>
+      <div class="capacity-item">
+        <div class="capacity-item__icon">⚡</div>
+        <div class="capacity-item__step">03 / RAPID SAMPLE</div>
+        <div class="capacity-item__title">快速打样周期</div>
+        <div class="capacity-item__num"><span class="counter" data-target="72">0</span><span class="unit" style="font-size:0.5em;color:var(--brand-blue);font-weight:700;">h</span></div>
+        <div class="capacity-item__label">最快首件响应</div>
+        <div class="capacity-item__tags">
+          <span class="capacity-item__tag">DWG</span>
+          <span class="capacity-item__tag">STEP</span>
+          <span class="capacity-item__tag">PDF</span>
+        </div>
+      </div>
+      <div class="capacity-item">
+        <div class="capacity-item__icon">✅</div>
+        <div class="capacity-item__step">04 / QUALITY CONTROL</div>
+        <div class="capacity-item__title">出厂合格率</div>
+        <div class="capacity-item__num"><span class="counter" data-target="99">0</span><span class="unit" style="font-size:0.5em;color:var(--brand-blue);font-weight:700;">%</span></div>
+        <div class="capacity-item__label">四级质量节点全程把关</div>
+        <div class="capacity-item__tags">
+          <span class="capacity-item__tag">首件确认</span>
+          <span class="capacity-item__tag">过程巡检</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- CTA inside capacity -->
+    <div class="text-center mt-section fade-up">
+      <a href="contact.html" class="btn btn--blue">
+        提交图纸评估产能
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════
+     WHY CHOOSE US
+═══════════════════════════════ -->
+<section class="section" id="why">
+  <div class="container">
+    <div class="section__header fade-up">
+      <div class="eyebrow">WHY CHOOSE US</div>
+      <h2 class="section-title">为什么选择<em>我们</em></h2>
+      <p class="section-desc">以自有产线、工程能力与稳定交付，为每一张图纸提供可靠的制造答案</p>
+      <div class="section-divider"></div>
+    </div>
+
+    <div class="why-grid">
+      <div class="why-card fade-up">
+        <div class="why-card__num">01</div>
+        <div class="why-card__title">自有生产基地</div>
+        <div class="why-card__desc">8600㎡ 标准化厂区，自有设备、自有团队、自主排产，全流程质量与交期都能直接管控。</div>
+      </div>
+      <div class="why-card fade-up">
+        <div class="why-card__num">02</div>
+        <div class="why-card__title">全流程设备体系</div>
+        <div class="why-card__desc">激光切割、数控冲切、折弯、CNC 加工、人工焊接与静电喷涂协同生产，减少外协环节。</div>
+      </div>
+      <div class="why-card fade-up">
+        <div class="why-card__num">03</div>
+        <div class="why-card__title">面向制造的工程支持</div>
+        <div class="why-card__desc">从图纸评估、结构优化到工艺拆解，工程团队提前识别制造风险，提升可制造性与成本效率。</div>
+      </div>
+      <div class="why-card fade-up">
+        <div class="why-card__num">04</div>
+        <div class="why-card__title">快速报价与打样响应</div>
+        <div class="why-card__desc">支持 DWG、STEP、PDF 图纸与来样评估，需求快速反馈，样件最快 72 小时完成。</div>
+      </div>
+      <div class="why-card fade-up">
+        <div class="why-card__num">05</div>
+        <div class="why-card__title">稳定品质与准时交付</div>
+        <div class="why-card__desc">从首件确认、过程检验到出厂复核建立质量闭环，柔性排产与项目跟踪保障批量订单按期交付。</div>
+      </div>
+      <div class="why-card fade-up">
+        <div class="why-card__num">06</div>
+        <div class="why-card__title">源头工厂直接协同</div>
+        <div class="why-card__desc">从样件到规模生产均由华晟直接对接，沟通路径更短、问题响应更快，提供更具竞争力的制造方案。</div>
+      </div>
+    </div>
+
+    <div class="text-center mt-section fade-up">
+      <p style="font-size:14px;color:var(--text-muted);margin-bottom:20px;">
+        图纸保密 · 工艺可追溯 · 项目专人跟进<br>让每一次合作更高效、更透明
+      </p>
+      <a href="contact.html" class="btn btn--primary">
+        提交图纸获取报价
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════
+     PRODUCT CATEGORIES
+═══════════════════════════════ -->
+<section class="section section--alt" id="products">
+  <div class="container">
+    <div class="section__header fade-up">
+      <div class="eyebrow">PRODUCT CATEGORIES</div>
+      <h2 class="section-title">不只是产品分类，<em>更是完整制造方案</em></h2>
+      <p class="section-desc">围绕储能、电力与工业装备，从结构评审、数控下料到表面处理和预装检查，把产品难点落实到每一道工序</p>
+      <div class="section-divider"></div>
+    </div>
+
+    <div class="product-grid">
+      <!-- Product 1 -->
+      <div class="product-card fade-up">
+        <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?w=600&q=80" alt="成套柜体" class="product-card__image">
+        <div class="product-card__body">
+          <div class="product-card__label">POWER DISTRIBUTION · 成套柜体</div>
+          <div class="product-card__title">高低压成套柜体与配电终端</div>
+          <div class="product-card__desc">覆盖 GGD、GCS、KYN28 类柜体骨架、门板、安装板与内部横梁，重点处理柜门间隙、器件开孔和批次外观一致性。</div>
+          <div class="product-card__tags">
+            <span class="product-card__tag">冷轧板 / 敷铝锌板</span>
+            <span class="product-card__tag">孔位与门缝控制</span>
+            <span class="product-card__tag">粉末喷涂</span>
+          </div>
+          <a href="products.html" class="product-card__link">
+            查看对应产品
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Product 2 -->
+      <div class="product-card fade-up">
+        <img src="https://images.unsplash.com/photo-1581092335397-9583eb92d232?w=600&q=80" alt="户外箱体" class="product-card__image">
+        <div class="product-card__body">
+          <div class="product-card__label">OUTDOOR ENCLOSURE · 户外箱体</div>
+          <div class="product-card__title">户外设备舱、箱变与防护箱体</div>
+          <div class="product-card__desc">围绕大型箱体的刚性、门体密封、通风散热、底座安装及运输吊装条件进行结构和工艺拆分。</div>
+          <div class="product-card__tags">
+            <span class="product-card__tag">模块化箱体</span>
+            <span class="product-card__tag">密封与通风</span>
+            <span class="product-card__tag">预装检查</span>
+          </div>
+          <a href="products.html" class="product-card__link">
+            查看对应产品
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Product 3 -->
+      <div class="product-card fade-up">
+        <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80" alt="新能源钣金" class="product-card__image">
+        <div class="product-card__body">
+          <div class="product-card__label">ENERGY STORAGE · 新能源钣金</div>
+          <div class="product-card__title">储能柜与新能源设备钣金件</div>
+          <div class="product-card__desc">适用于储能机柜、充电设备外壳和光伏配套箱体，兼顾散热路径、器件分区、线缆接口与维护空间。</div>
+          <div class="product-card__tags">
+            <span class="product-card__tag">碳钢 / 铝板 / 不锈钢</span>
+            <span class="product-card__tag">散热结构</span>
+            <span class="product-card__tag">批量一致性</span>
+          </div>
+          <a href="products.html" class="product-card__link">
+            查看对应产品
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Product 4 -->
+      <div class="product-card fade-up">
+        <img src="https://images.unsplash.com/photo-1565034946487-077786996e27?w=600&q=80" alt="非标定制" class="product-card__image">
+        <div class="product-card__body">
+          <div class="product-card__label">NON-STANDARD · 非标定制</div>
+          <div class="product-card__title">非标钣金组件与 CNC 精加工件</div>
+          <div class="product-card__desc">支持来图来样，从机架、护罩、支架和复杂面板，到铝合金深腔、散热底板与多孔位结构件的协同加工。</div>
+          <div class="product-card__tags">
+            <span class="product-card__tag">单件与小批量</span>
+            <span class="product-card__tag">复杂孔系</span>
+            <span class="product-card__tag">钣金 + CNC</span>
+          </div>
+          <a href="products.html" class="product-card__link">
+            查看对应产品
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════
+     KNOWLEDGE CENTER
+═══════════════════════════════ -->
+<section class="section" id="knowledge">
+  <div class="container">
+    <div class="section__header fade-up">
+      <div class="eyebrow">ENGINEERING NOTES</div>
+      <h2 class="section-title">把采购与工程问题<em>讲清楚</em></h2>
+      <p class="section-desc">围绕储能柜、非标钣金、材料选择和电气柜体，整理可核对的技术输入和评审边界</p>
+      <div class="section-divider"></div>
+    </div>
+
+    <div class="knowledge-grid">
+      <div class="knowledge-card fade-up">
+        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=500&q=80" alt="储能柜钣金指南" class="knowledge-card__image">
+        <div class="knowledge-card__body">
+          <div class="knowledge-card__num">01 · 储能柜</div>
+          <div class="knowledge-card__title">储能柜钣金定制需要确认哪些技术条件？</div>
+          <div class="knowledge-card__desc">从环境、结构、热管理、接口、材料和检验入手，整理可核对的技术输入清单。</div>
+          <a href="#" class="knowledge-card__link">
+            阅读指南
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="knowledge-card fade-up">
+        <img src="https://images.unsplash.com/photo-1586281380349-632531db7ed4?w=500&q=80" alt="询价资料指南" class="knowledge-card__image">
+        <div class="knowledge-card__body">
+          <div class="knowledge-card__num">02 · 询价资料</div>
+          <div class="knowledge-card__title">非标钣金询价需要准备哪些图纸与资料？</div>
+          <div class="knowledge-card__desc">二维图、三维模型、BOM、数量、材料和表面要求——每一项的作用与准备方法。</div>
+          <a href="#" class="knowledge-card__link">
+            阅读指南
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="knowledge-card fade-up">
+        <img src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=500&q=80" alt="材料选择指南" class="knowledge-card__image">
+        <div class="knowledge-card__body">
+          <div class="knowledge-card__num">03 · 材料选择</div>
+          <div class="knowledge-card__title">冷轧钢、不锈钢与铝板如何选择？</div>
+          <div class="knowledge-card__desc">对比使用环境、结构刚度、连接、接地与表面处理，快速找到适合项目的材料方案。</div>
+          <a href="#" class="knowledge-card__link">
+            阅读指南
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="text-center mt-section fade-up">
+      <a href="#" class="btn btn--secondary btn--sm">
+        查看全部知识与采购指南
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════
+     CTA BANNER
+═══════════════════════════════ -->
+<section class="cta-banner">
+  <div class="container">
+    <h2 class="cta-banner__title">有钣金加工需求？发图纸，当天出报价</h2>
+    <p class="cta-banner__desc">支持 DWG / STEP / PDF 图纸，来样测绘同样可加工</p>
+    <a href="contact.html" class="btn btn--primary">
+      在线报价留言
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+    </a>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════
+     FOOTER
+═══════════════════════════════ -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer__grid">
+      <!-- Brand col -->
+      <div>
+        <div class="footer__brand">
+          <div class="footer__brand-mark">H</div>
+          HUASHENG
+        </div>
+        <p class="footer__desc">专注储能柜精密制造与非标钣金定制，激光切割 · 数控折弯 · CNC加工 · 静电喷涂全流程自有产线。</p>
+        <div class="footer__hotline">
+          <div class="footer__hotline-item">
+            <span>📞</span>
+            <a href="tel:13722733666">137 2273 3666</a>
+          </div>
+          <div class="footer__hotline-item">
+            <span>📧</span>
+            <a href="mailto:1781924161@qq.com">1781924161@qq.com</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Nav col 1 -->
+      <div>
+        <div class="footer__col-title">快速导航</div>
+        <div class="footer__links">
+          <a href="about.html" class="footer__link">关于我们</a>
+          <a href="products.html" class="footer__link">产品中心</a>
+          <a href="cases.html" class="footer__link">加工案例</a>
+          <a href="equipment.html" class="footer__link">设备实力</a>
+          <a href="contact.html" class="footer__link">联系我们</a>
+        </div>
+      </div>
+
+      <!-- Nav col 2 -->
+      <div>
+        <div class="footer__col-title">产品分类</div>
+        <div class="footer__links">
+          <a href="products.html" class="footer__link">成套柜体</a>
+          <a href="products.html" class="footer__link">户外箱体</a>
+          <a href="products.html" class="footer__link">新能源钣金</a>
+          <a href="products.html" class="footer__link">非标定制</a>
+          <a href="knowledge.html" class="footer__link">知识中心</a>
+        </div>
+      </div>
+
+      <!-- Contact col -->
+      <div>
+        <div class="footer__col-title">联系方式</div>
+        <div class="footer__links">
+          <div class="footer__link" style="cursor:default;">
+            📍 河北省沧州市青县马厂镇<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;杨官店开发区
+          </div>
+          <a href="tel:13722733666" class="footer__link">📞 137 2273 3666</a>
+          <a href="tel:13831765639" class="footer__link">📞 138 3176 5639</a>
+          <a href="mailto:1781924161@qq.com" class="footer__link">📧 1781924161@qq.com</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <span>© 2026 华晟智控电气有限公司 版权所有</span>
+      <a href="https://beian.miit.gov.cn/" target="_blank">冀ICP备2026034842号-1</a>
+    </div>
+  </div>
+</footer>
+
+<!-- JS -->
+<script src="../assets/js/main.js"></script>
+</body>
+</html>
